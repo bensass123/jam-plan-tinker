@@ -2,10 +2,16 @@ ok muchachos and  muchachas, i got the backend for the custom search working and
 
 sample custom search test:
 
+(needs to be done in the console)
+
 createCustomSearch('nashville', '20170222', '20170224');
+
+where the last two strings are dates that create a range
 
 or simply
 
 createCustomSearch('nashville');
 
-new week, day and month arrays are created from today with each custom search, regardless of date range. they will only be populated if the dropdown menu is changed.
+new week, day and month arrays are created (for infowindows, markers and items) from today with each custom search, regardless of date range. they will only be populated if the dropdown menu is changed.
+
+I pushed it up to a separate repository (we can incorporate it on tues) and to heroku so you guys can take a look:  https://peaceful-dawn-51937.herokuapp.com/main.html#
