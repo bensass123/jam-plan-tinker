@@ -1,0 +1,11 @@
+ok muchachos and  muchachas, i got the backend for the custom search working and i got the dropdown boxes working to show today, this week, this month, all results.  all that will be needed now is to pass them to the function when clicking submit  :) 
+
+sample custom search test:
+
+createCustomSearch('nashville', '20170222', '20170224');
+
+or simply
+
+createCustomSearch('nashville');
+
+new week, day and month arrays are created from today with each custom search, regardless of date range. they will only be populated if the dropdown menu is changed.

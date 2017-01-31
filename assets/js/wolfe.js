@@ -43,14 +43,14 @@ $(window).load(function(){
 });
 
 
-//to test: createCustomSearch('20170221', '20170222', 'seattle', 5);
+//to test: createCustomSearch('seattle', '20170221', '20170222',  5);
 
 
-function createCustomSearch(city, startRange, endRange, within) {
+function createCustomSearch() {
     var location = arguments[0];
     var startRange = arguments[1];
     var endRange = arguments[2];
-    var within = arguments[3];
+    
     
     //formatting date-range
     if(startRange && endRange){
@@ -74,9 +74,10 @@ function createCustomSearch(city, startRange, endRange, within) {
         searchArea = location;
     }
 
-    if(within){
-        withinLast = within;
-    }
+    //this will be added in if we decide to implement click to set location on map
+    // if(within){
+    //     withinLast = within;
+    // }
 
 
     oArgs = {
