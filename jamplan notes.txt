@@ -1,0 +1,19 @@
+
+- map probably needs to be zoomed out more, if not around the action, its possible its pulled up without any markers visible (requiring user to zoom out)
+
+- the map on mobile definitely needs to be close to full screen and zoomed in a lot more (i think this can be checked with a screen width variable and modified with jquery accordingly)
+
+- when you click an item in the table, it would be cool to have it auto-scroll back up to the map with the corresponding info window open (an easier fix to this would be to have a "pop-up" div open with the full details and a link to the event tickets page, but the auto scroll would be so cool!)
+
+- the map div needs to be bigger than the form div either way, (i'm thinking col-md-6 for the map and col-md-4 for the form, let me know what ya'll think)
+
+- integrating our custom search option with input values, dates, and input validation (this one is actually a good bit of work)
+
+- a nice 5 minute presentation with slideshow and talking points, with a few minutes built in at the end for audience to play around with it
+
+- the title on the landing page (Jam Plan Logo) gets cut off on mobile width of 320px(iphone 5s), would be great if we could fix, if not we could just say if you don't have at least iphone 6 you're outta luck lol)
+
+- potentially adding a navigation/directions layer to toggle on and off info windows to "get directions a second way (i'd say this is a bonus but it would still be cool, especially b/c Ben did a lot of leg work to figure this out)
+
+- If they click buy a ticket, lets at least explore how to make them "force post" a facebook or twitter tweet (another bonus)
+

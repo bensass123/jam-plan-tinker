@@ -1,0 +1,139 @@
+@font-face {
+
+	font-family: "METAL";
+	src:url("../fonts/metal lord.ttf") format("truetype");
+
+   }
+@font-face {
+
+	font-family: "GRAM";
+	src:url("../fonts/GramophoneNF.otf") format("truetype");
+
+   }
+   @font-face {
+
+	font-family: "GRAM1";
+	src:url("../fonts/AllAgesDEMO.ttf") format("truetype");
+
+   }
+
+body{
+
+	font-family: "METAL";
+	overflow: hidden;
+	/*background-image:url("http://www.livemusicmachine.com/wp-content/uploads/2014/12/live-gig.jpg");
+	background-size: 100% ;*/
+	color:black;
+
+}
+.item
+{
+	height: 1000px !important;
+}
+
+#myCarousel
+{
+	z-index: -2;
+	margin-top: -300px;
+	width: 1650px !important;
+	height: 900px !important;
+	margin-left: -200px;
+
+
+}
+
+a img
+{
+	height: 100px;
+	width: 100px;
+	
+}
+
+.container
+{
+		margin-top: -350px;
+
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 1650px !important;
+      height: 1000px !important;
+      margin: auto;
+  }
+
+
+
+#loginDiv
+{
+	margin-top: -350px;
+	z-index:1;
+	text-align: center;
+}
+
+h1
+{
+	font-family: "GRAM1";
+	color: white;
+	text-align: center;
+	font-size: 80px;
+	padding: 10px;
+	border: none;
+	color: rgba(1,120,255,1);
+	text-decoration: normal;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	white-space: pre;
+	text-shadow: 0 0 10px rgba(1,1,255,1) , 0 0 20px rgba(1,1,255,1) , 0 0 30px rgba(1,1,255,1) , 0 0 40px #000000 , 0 0 70px #000 , 0 0 80px #000 , 0 0 100px #000 ;
+	-webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	-moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	-o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+h3
+{
+	font-family: "GRAM";
+	letter-spacing: 2px;
+	color: orange;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(1,1,1,1) , 0 0 20px rgba(1,1,1,1) , 0 0 30px rgba(1,1,1,1) , 0 0 40px #000000 , 0 0 70px #000 , 0 0 80px #000 , 0 0 100px #000 ;
+}
+
+a{
+	margin:20px;
+}
+
+div
+{
+	text-align: center;
+	margin-top: 200px;
+}
+
+img
+{
+	height: 200px;
+	width: 300px;
+	margin:40px;
+}
+
+.item1div
+{
+	text-align: center !important;
+}
+
+.item1
+{
+	position: relative;
+	text-align: center !important;
+	width: 1550px !important;
+	height: 900px !important;
+
+
+}
+
+#images
+{
+	text-align: center;
+}
+

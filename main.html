@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <title>JAM PLAN</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Bree+Serif" rel="stylesheet">
+    <!-- calendar js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Custom stylesheet -->
+    <link href="assets/css/style-main.css" rel="stylesheet">
+
+
+    
+  </head>
+  <body>
+  
+  <div class="container">  <!-- title container -->
+    
+    <div class="row">  <!-- top row -->
+       
+        <div class="jumbotron header">
+          
+          <div class="page-header mainhead">
+          
+            <h1>JAM PLAN</h1>
+
+
+          </div>  <!-- end page-header -->
+
+          <p id="welcome">Welcome, <span id="insert-name"></span>! <button class="btn btn-danger" id="sign-out">Sign Out</button></p>
+
+        </div> <!-- end jumbotron -->
+     
+     </div>  <!-- end top row -->
+
+
+  </div> <!-- end title container -->
+  
+  <div class="row">
+
+    <div class="col-lg-offset-1 col-lg-6"> 
+
+       <!-- Train information container start -->
+
+        <div class="panel panel-primary resultcont" id="search">
+      
+          <div class="panel-heading heading">Custom Search</div> 
+        
+          <div class="panel-body panel-form"> <!-- start panel-form -->
+  
+            <form id="myform"> <!-- Form start -->
+  
+              <div class="question">
+              
+                <label>City</label>
+                <input type="text" class="form-control" name="term" id="trainName" required="">
+    
+              </div><br>
+
+              <div class="question">
+              
+                <label>Within (miles)</label>
+                <input type="number" class="form-control" name="term" id="dest" required>
+    
+              </div><br>
+
+<div class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <li><a href="#" data-date='today'>Today</a></li>
+        <li><a href="#" data-date='week'>This Week</a></li>
+        <li><a href="#" data-date='month'>This Month</a></li>
+        <li><a href="#" data-date='all'>All Events</a></li>
+    </ul>
+</div>
+
+
+<!-- <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick='log_stuff(this)'>
+    Dropdown
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button" value="today" onclick="$(this).parent().submit()">Today</button>
+    <button class="dropdown-item" type="button" value="week" onclick="$(this).parent().submit()">This Week</button>
+    <button class="dropdown-item" type="button" value="month" onclick="$(this).parent().submit()">This Month</button>
+  </div>
+</div> -->
+
+<!-- looking at reddit code as reference -->
+
+<!-- <div class="spacer">
+  <span class="dropdown-title lightdrop">links from: </span>
+    <div class="dropdown lightdrop" onclick="open_menu(this)"><span class="selected">past 24 hours</span></div>
+    <div class="drop-choices lightdrop">
+        <form method="POST" action="https://www.reddit.com/r/aww/top/">
+            <input type="hidden" name="t" value="hour"><a href="https://www.reddit.com/r/aww/top/" class="choice" onclick="$(this).parent().submit(); return false;">past hour</a></form>
+        <form method="POST" action="https://www.reddit.com/r/aww/top/">
+            <input type="hidden" name="t" value="week"><a href="https://www.reddit.com/r/aww/top/" class="choice" onclick="$(this).parent().submit(); return false;">past week</a></form>
+        <form method="POST" action="https://www.reddit.com/r/aww/top/">
+            <input type="hidden" name="t" value="month"><a href="https://www.reddit.com/r/aww/top/" class="choice" onclick="$(this).parent().submit(); return false;">past month</a></form>
+        <form method="POST" action="https://www.reddit.com/r/aww/top/">
+            <input type="hidden" name="t" value="year"><a href="https://www.reddit.com/r/aww/top/" class="choice" onclick="$(this).parent().submit(); return false;">past year</a></form>
+        <form method="POST" action="https://www.reddit.com/r/aww/top/">
+            <input type="hidden" name="t" value="all"><a href="https://www.reddit.com/r/aww/top/" class="choice" onclick="$(this).parent().submit(); return false;">all time</a></form>
+    </div>
+</div>
+ -->
+
+<!--               <div class=" form-group question">
+            
+                <label>From:</label>
+                <div class='input-group date' id='datetimepicker1'>
+
+                    <input type='text' class="form-control" >
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+
+              </div><br>
+
+              <div class="form-group question">
+
+              <label>To:</label>
+                <div class='input-group date' id='datetimepicker2'>
+                
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+
+              </div><br> -->
+  
+              
+  
+              <button id="add-submit">Submit</button>
+              <button id="clear">Clear</button>
+              
+            </form> <!-- End form -->
+        
+          </div> <!-- End panel-form -->
+
+        </div>
+
+       <!-- Train information container end -->
+    
+     </div> 
+    
+    <div class="col-lg-5"">
+
+        <div class="panel panel-primary" id="maps">
+      
+          <div class="panel-heading heading" id='map-heading'>MAPS <button class='btn btn-success' id='traffic'>Toggle Traffic</button></div> 
+          
+          <div class="panel-body panel-form" id="mapresult"> 
+          
+          </div>
+          
+        </div>
+        
+
+    </div>
+  
+  </div>
+
+  <div class="container" id="results"> <!-- result container -->
+      
+    <div class="panel panel-primary resultcont">
+        
+      <div class="panel-heading heading">Concert Details <span id="clockbox"></span></div>
+
+        <div class="panel-body table-responsive" id="results-panel">
+          
+          <!-- Result Table-->
+          <table class="table table-hover" id='concert-table'> 
+            <thead>
+                  <tr>
+                      <th>Event</th>
+                      <th>Venue</th>
+                      <th>Address</th>
+                      <th>Starts:</th>
+                  </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            
+
+          </table>
+
+        </div>
+        
+      </div>
+
+    </div> <!-- end panel -->
+  
+  </div>  <!-- end result container -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUUruju1mgKHGQQyFHqcUFv4VizLypoZw"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+  <!-- Firebase script -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <!-- jQuery -->
+  
+  
+  <!-- Moment js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <!-- Wolfe Javascript -->
+  <script type="text/javascript" src="https://api.eventful.com/js/api"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js' type='text/javascript'></script>
+  <script src='assets/js/wolfe.js'></script>
+  <script type="text/javascript">
+    // calendar js
+    $(function () {
+        $('#datetimepicker1').datetimepicker({
+          format: 'MM/DD/YYYY'});
+        $('#datetimepicker2').datetimepicker({
+          format: 'MM/DD/YYYY'});
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>                       
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+  
+
+</body>
+</html>
